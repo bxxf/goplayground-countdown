@@ -22,7 +22,7 @@ var generator *gp.Generator
 
 func init() {
 	font.Init()
-	gifCache = cache.NewCache(100)
+	gifCache = cache.NewCache(2000)
 	generator = gp.NewGenerator(font.Face)
 	handlers.Init(generator, gifCache)
 }

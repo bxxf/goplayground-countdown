@@ -1,5 +1,5 @@
 # Go Playground Countdowns
-GoPlayground Countdowns is a simple project that is my learning playground for exploring the capabilities and features of programming language Go, particularly in creating dynamic GIF countdowns for email campaigns. The project uses several Go libraries and technologies to generate, manipulate, and animate images.
+GoPlayground Countdowns is a simple project that is used as learning playground for me to explore the capabilities and features of programming language Go, particularly in creating dynamic GIF countdowns for email campaigns. The project uses several Go libraries and technologies to generate, manipulate, and animate images.
 
 This project is essentially a GIF generator that creates countdown timers suitable for email campaigns. The generated GIF has 60 frames, each representing one minute of an hour. When a request to generate a GIF is received, new gifs are created automatically for next 60 minutes, creating images on the fly to reduce response times.
 
@@ -35,4 +35,6 @@ To get a local copy up and running, follow these simple steps:
  go run main.go
  ```
 
+## Demo
+![Gif Preview](https://countdown-gifs-test.fly.dev/countdown?date=2023-06-15)
 You can find demo [here](https://countdown-gifs-test.fly.dev/countdown?date=2023-06-15)

@@ -37,4 +37,5 @@ To get a local copy up and running, follow these simple steps:
 
 ## Demo
 ![Gif Preview](https://countdown-gifs-test.fly.dev/countdown?date=2023-06-15)
+
 You can find demo [here](https://countdown-gifs-test.fly.dev/countdown?date=2023-06-15)

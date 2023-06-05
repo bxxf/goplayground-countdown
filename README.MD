@@ -5,7 +5,7 @@ This project is essentially a GIF generator that creates countdown timers suitab
 
 Each frame shows the countdown timer with the remaining time, with one minute being subtracted for each subsequent frame. This gives the illusion of a ticking timer when the GIF is played.
 
-Firstly, placeholder image is generated which has little bit lower quality to reduce response time, meanwhile new GIFs are created with better quality and cached to improve both quality and response times for future requests.
+Firstly, placeholder image is generated which has little bit lower quality to reduce response time, meanwhile new GIFs are created with better quality and subsequently are cached to improve both quality and response times for future requests.
 
 Features
 - **GIF Countdown**: Generate dynamic countdown GIFs, useful for visual countdowns for events, sales, promotions, etc., in email campaigns.
@@ -27,7 +27,7 @@ To get a local copy up and running, follow these simple steps:
 
 2. Navigate to the project directory:
  ```shell 
- cd goplayground-countdown
+ cd goplayground-countdowns
  ```
 
 3. Run the project:

@@ -9,7 +9,7 @@ Firstly, placeholder image is generated which has little bit lower quality to re
 
 Features
 - **GIF Countdown**: Generate dynamic countdown GIFs, useful for visual countdowns for events, sales, promotions, etc., in email campaigns.
-- **Caching**: Implementing efficient caching strategies using Go variables to improve the performance of countdown generation adn response times.
+- **Caching**: Implementing efficient caching strategies using Go variables to improve the performance of countdown generation and response times.
   
 
 ## Getting Started

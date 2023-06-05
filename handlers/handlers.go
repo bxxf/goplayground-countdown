@@ -79,9 +79,15 @@ func generateGIFAsync(remainingTime time.Duration) *gif.GIF {
 }
 
 var nextHourCached = make(map[string]time.Time)
+var nextHourGenerating = make(map[string]bool)
 
 // pre generate GIFs for the next hour and cache them to improve response time
 func generateAndCacheGIFs(dateStr string, remainingTime time.Duration) {
+	if nextHourGenerating[dateStr] {
+		log.Println("Cache is already generating", dateStr)
+		return
+	}
+	nextHourGenerating[dateStr] = true
 	startTime := time.Now()
 	remainingTimeInHour := 60
 
@@ -123,4 +129,5 @@ func generateAndCacheGIFs(dateStr string, remainingTime time.Duration) {
 		}
 	}
 	nextHourCached[dateStr] = targetDate.Add(time.Hour)
+	nextHourGenerating[dateStr] = false
 }

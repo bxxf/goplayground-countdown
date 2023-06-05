@@ -136,7 +136,9 @@ func (g *Generator) drawStringWithPositionUpdate(dc *gg.Context, startX *float64
 }
 
 func (g *Generator) getUpdatedWidth(value int, cacheWidthAddon float64) float64 {
-
+	if value < 0 {
+		value = 0
+	}
 	return g.minSecWidths[value] * cacheWidthAddon
 }
 
